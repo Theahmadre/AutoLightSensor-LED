@@ -47,7 +47,7 @@ Below is the circuit diagram for connecting the LDR and LED to the Raspberry Pi:
 4. Run the script:
 
     ```bash
-    python3 LDRAmbient.py
+    sudo python3 LDRAmbient.py
     ```
 
 ## How It Works
