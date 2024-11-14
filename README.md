@@ -13,6 +13,8 @@ This project uses a **Light Dependent Resistor (LDR)** connected to a **Raspberr
 - **LDR (Light Dependent Resistor)**
 - **LED** (any color)
 - **330Ω Resistor** (for current limiting to LED)
+- **10kΩ Resistor** (for voltage divider with LDR)
+- **10µF Capacitor** (for stabilizing LDR readings)
 - **Breadboard** and **jumper wires**
 - **Power Supply** for Raspberry Pi
 
@@ -27,7 +29,7 @@ Below is the circuit diagram for connecting the LDR and LED to the Raspberry Pi:
 1. Connect the LDR to GPIO Pin 17 on the Raspberry Pi.
 2. Connect the LED to GPIO Pin 6 on the Raspberry Pi.
 3. Use a 330Ω resistor for the LED to limit the current and prevent damage to the GPIO pin.
-4. Make sure to wire the LDR in a voltage divider configuration with an appropriate resistor (e.g., 10kΩ) to get a readable voltage signal for light detection.
+4. Ensure the LDR is wired in a voltage divider configuration with a 10kΩ resistor and a 10µF capacitor to get a stable and readable voltage signal for light detection.
 
 ## Setup and Installation
 
@@ -47,7 +49,7 @@ Below is the circuit diagram for connecting the LDR and LED to the Raspberry Pi:
 4. Run the script:
 
     ```bash
-    sudo python3 LDRAmbient.py
+    python3 LDRAmbient.py
     ```
 
 ## How It Works
