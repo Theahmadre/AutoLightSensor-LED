@@ -16,7 +16,6 @@ This project uses a **Light Dependent Resistor (LDR)** connected to a **Raspberr
 - **10kΩ Resistor** (for voltage divider with LDR)
 - **10µF Capacitor** (for stabilizing LDR readings)
 - **Breadboard** and **jumper wires**
-- **Power Supply** for Raspberry Pi
 
 ## Circuit Diagram
 
@@ -49,7 +48,7 @@ Below is the circuit diagram for connecting the LDR and LED to the Raspberry Pi:
 4. Run the script:
 
     ```bash
-    python3 LDRAmbient.py
+    sudo python3 LDRAmbient.py
     ```
 
 ## How It Works
